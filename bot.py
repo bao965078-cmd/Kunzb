@@ -3,7 +3,7 @@ import asyncio
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-BOT_TOKEN = os.getenv("8926598009:AAEQX4HlX7ABl5l0vjHOReB-lgwaHglnZU8", "").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 
 if not BOT_TOKEN:
     raise RuntimeError("Missing BOT_TOKEN environment variable.")
